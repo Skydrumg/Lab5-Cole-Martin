@@ -1,6 +1,12 @@
 ﻿Option Strict On
+
 Imports System.IO
+
 Public Class Form1
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        MsgBox("this is indeed a text file", MsgBoxStyle.OkOnly, "about")
+    End Sub
     Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
         Dim ofd As New OpenFileDialog
 
@@ -44,14 +50,23 @@ Public Class Form1
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
 
         Dim sfd As New SaveFileDialog
-        sfd.CheckFileExists = False
-        sfd.CheckPathExists = False
+        sfd.CheckFileExists = True
+        sfd.CheckPathExists = True
         sfd.DefaultExt = "txt"
         sfd.Filter = "Text Files (*.txt)|*.txt|All files(*.*)|*.*"
         sfd.RestoreDirectory = True
 
-    End Sub
 
+        Dim sv As String
+        sfd.ShowDialog()
+        sv = sfd.FileName
+
+
+        Dim sw As New StreamWriter(sv)
+        sw.Write(RichTextBox1.Text)
+        sw.Close()
+
+    End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
@@ -60,6 +75,7 @@ Public Class Form1
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
     End Sub
+
 
     Private Sub CopyToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem1.Click
         RichTextBox1.Copy()
@@ -74,4 +90,5 @@ Public Class Form1
         RichTextBox1.Paste()
 
     End Sub
+
 End Class
