@@ -5,7 +5,9 @@ Imports System.IO
 Public Class Form1
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox("this is indeed a text file", MsgBoxStyle.OkOnly, "about")
+
+        MsgBox("this is indeed a text file editor", MsgBoxStyle.OkOnly, "about")
+
     End Sub
     Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
         Dim ofd As New OpenFileDialog
@@ -91,4 +93,7 @@ Public Class Form1
 
     End Sub
 
+    Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseToolStripMenuItem.Click
+        RichTextBox1.Text = ""
+    End Sub
 End Class

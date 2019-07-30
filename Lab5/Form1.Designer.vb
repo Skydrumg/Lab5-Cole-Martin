@@ -109,21 +109,21 @@ Partial Class Form1
         '
         Me.CopyToolStripMenuItem1.Name = "CopyToolStripMenuItem1"
         Me.CopyToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CopyToolStripMenuItem1.Size = New System.Drawing.Size(360, 42)
+        Me.CopyToolStripMenuItem1.Size = New System.Drawing.Size(280, 42)
         Me.CopyToolStripMenuItem1.Text = "Copy"
         '
         'CutToolStripMenuItem
         '
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
         Me.CutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(360, 42)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(280, 42)
         Me.CutToolStripMenuItem.Text = "Cut"
         '
         'PasteToolStripMenuItem1
         '
         Me.PasteToolStripMenuItem1.Name = "PasteToolStripMenuItem1"
         Me.PasteToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.PasteToolStripMenuItem1.Size = New System.Drawing.Size(360, 42)
+        Me.PasteToolStripMenuItem1.Size = New System.Drawing.Size(280, 42)
         Me.PasteToolStripMenuItem1.Text = "Paste"
         '
         'HelpToolStripMenuItem
@@ -137,7 +137,7 @@ Partial Class Form1
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         Me.AboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(360, 42)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(242, 42)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'RichTextBox1
