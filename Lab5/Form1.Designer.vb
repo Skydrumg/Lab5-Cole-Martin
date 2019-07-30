@@ -60,75 +60,84 @@ Partial Class Form1
         'NewToolStripMenuItem
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(214, 42)
+        Me.NewToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(376, 42)
         Me.NewToolStripMenuItem.Text = "New"
         '
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(214, 42)
+        Me.OpenToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(376, 42)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(360, 42)
+        Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(376, 42)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'SaveAsToolStripMenuItem
         '
         Me.SaveAsToolStripMenuItem.Name = "SaveAsToolStripMenuItem"
-        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(214, 42)
+        Me.SaveAsToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+            Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(376, 42)
         Me.SaveAsToolStripMenuItem.Text = "Save As"
         '
         'CloseToolStripMenuItem
         '
         Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(214, 42)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(376, 42)
         Me.CloseToolStripMenuItem.Text = "Close"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(360, 42)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(376, 42)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'PasteToolStripMenuItem
         '
         Me.PasteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CopyToolStripMenuItem1, Me.CutToolStripMenuItem, Me.PasteToolStripMenuItem1})
         Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
-        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(75, 41)
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(75, 43)
         Me.PasteToolStripMenuItem.Text = "Edit"
         '
         'CopyToolStripMenuItem1
         '
         Me.CopyToolStripMenuItem1.Name = "CopyToolStripMenuItem1"
-        Me.CopyToolStripMenuItem1.Size = New System.Drawing.Size(186, 42)
+        Me.CopyToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
+        Me.CopyToolStripMenuItem1.Size = New System.Drawing.Size(360, 42)
         Me.CopyToolStripMenuItem1.Text = "Copy"
         '
         'CutToolStripMenuItem
         '
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(186, 42)
+        Me.CutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(360, 42)
         Me.CutToolStripMenuItem.Text = "Cut"
         '
         'PasteToolStripMenuItem1
         '
         Me.PasteToolStripMenuItem1.Name = "PasteToolStripMenuItem1"
-        Me.PasteToolStripMenuItem1.Size = New System.Drawing.Size(186, 42)
+        Me.PasteToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
+        Me.PasteToolStripMenuItem1.Size = New System.Drawing.Size(360, 42)
         Me.PasteToolStripMenuItem1.Text = "Paste"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(85, 41)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(85, 43)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(197, 42)
+        Me.AboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(360, 42)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'RichTextBox1

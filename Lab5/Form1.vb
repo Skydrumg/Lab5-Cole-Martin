@@ -14,7 +14,7 @@ Public Class Form1
         ofd.ShowDialog()
         fl = ofd.FileName
 
-        Dim sr As New System.IO.StreamReader(fl)
+        Dim sr As New StreamReader(fl)
         RichTextBox1.Text = sr.ReadToEnd()
         sr.Close()
 
@@ -28,7 +28,7 @@ Public Class Form1
         sfd.DefaultExt = "txt"
         sfd.Filter = "Text Files (*.txt)|*.txt|All files(*.*)|*.*"
         sfd.RestoreDirectory = True
-
+        sfd.ValidateNames = True
 
 
         Dim sv As String
@@ -59,5 +59,19 @@ Public Class Form1
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
+    End Sub
+
+    Private Sub CopyToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem1.Click
+        RichTextBox1.Copy()
+
+    End Sub
+
+    Private Sub CutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CutToolStripMenuItem.Click
+        RichTextBox1.Cut()
+    End Sub
+
+    Private Sub PasteToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PasteToolStripMenuItem1.Click
+        RichTextBox1.Paste()
+
     End Sub
 End Class
